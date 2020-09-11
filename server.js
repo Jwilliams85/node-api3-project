@@ -16,7 +16,7 @@ server.use((err, req, res, next) => {
 	console.log(err)
 	
 	res.status(500).json({
-		message: "Something went wrong, please try again later",
+		message: "OOpps something went wrong, please try again later",
 	})
 })
 
@@ -36,3 +36,5 @@ function logger(req, res, next) {
 }
 
 module.exports = server
+
+//middleware is a way to add functionality to express without having to change the source code for express.
